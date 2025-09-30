@@ -1,3 +1,23 @@
+# TryIt-AI Kit v2.0 (stable version, hosted on Replit)
+
+		file:	final_copy_tryit_ai_2.0_replit
+
+		GitHub:	tryit-ai-v2-public
+			https://github.com/HonestImpact/tryit-ai-v2-public
+			
+		Replit:	tryit-ai-v1
+
+		Moved 1.0 hot mess code to Refact to clean up
+		Moved now 2.0 to visual studio code to finish cleanup
+		Returned to cursor; built up 2.0
+		Pushed to Vercel for production; Cursor wigged out 
+			about a SIGKILL error and executed a silent git reset
+		Rebuilt in Cursor pushing each change to Vercel; 
+			with the first SIGKILL error, Cursor asked me if 
+			I wanted to do a hard reset. 
+		Moved to Replit
+		Finished in Replit
+
 # Noah - Trust Recovery Protocol AI System
 
 > A multi-agent AI assistant designed to build genuine trust through honest interaction and collaborative problem-solving.
