@@ -1,0 +1,49 @@
+{
+  "name": "tryit-ai-refact",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 5000 --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --port 5000 --hostname 0.0.0.0",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "setup-rag": "node scripts/setup-rag.mjs",
+    "test-rag": "node scripts/test-rag.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.17",
+    "@ai-sdk/openai": "^2.0.38",
+    "@chroma-core/default-embed": "^0.1.8",
+    "@octokit/rest": "^22.0.0",
+    "@replit/object-storage": "^1.0.0",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node-fetch": "^2.6.13",
+    "@types/pg": "^8.15.5",
+    "ai": "^5.0.47",
+    "chromadb": "^3.0.15",
+    "dotenv": "^17.2.2",
+    "jsdom": "^27.0.0",
+    "next": "15.5.3",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.104.0",
+    "pg": "^8.16.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.17",
+    "@types/react": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.17.0"
+}

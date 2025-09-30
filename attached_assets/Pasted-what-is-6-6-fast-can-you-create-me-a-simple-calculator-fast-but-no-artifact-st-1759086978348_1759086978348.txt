@@ -1,0 +1,34 @@
+what is 6 +  6?
+>> fast
+
+can you create me a simple calculator?
+>> fast -- but no artifact -- streamed only to chat window without trucation
+
+How about a sophisiticated calculator that includes all functions of a scientific calenddar and a financial calculator, but is laid out in a way that is intuitive and easy to use?
+>> fast 
+>> noah logged an artifict
+… artifact streamed only to chat window
+… chat window maxed out so streaming of tool to chat window ended without finishing the tool
+
+Research the latest trends in renewable energy for 2025
+>> successfully handed off to Wonderer
+>> results streamed in full in chat window; this should truncate with a note of redirection
+>> no artifact was created
+>> needs to be an artifact
+>> need to have Wander log what outside sources were pulled for generating the results for transparency
+
+Build a React component for a user profile card with avatar, name, and bio
+>> successfully handed off to Tinkerer
+>> results streamed in full in chat window; this should truncate with a note of redirection
+>> artifact was created
+>> need to have Wanderer log what outside sources were pulled for generating the results
+
+
+
+Analyze the current state of e-commerce platforms, compare their features, and then build a prototype shopping cart component
+>> agent = "noah" in the logs… don't know if that is true, or if Wonderer or Tinkerer helps
+>> research results streamed in full in chat window; this should create an artifact and truncate with a note of redirection
+>> build results created an artifact; this streamed in full in chat window; this should truncate with a note of redirection
+>> if Wanderer was involvd, need to log what outside sources were pulled for generating the results for transparency & need to show that Wanderer created it 
+>> if Tinkerer was involved, need to log what outside sources were pulled for generating the results & need to show that Tinkerer created it
+>> need to log what agent combination was involved

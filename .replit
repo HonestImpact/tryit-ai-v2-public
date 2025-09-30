@@ -1,0 +1,73 @@
+run = "npm run dev"
+entrypoint = "index.js"
+hidden = [".config", "package-lock.json", ".next", ".swc"]
+modules = ["nodejs-22", "postgresql-16", "python-3.11"]
+
+[nix]
+channel = "stable-24_11"
+
+[env]
+NEXT_TELEMETRY_DISABLED = "1"
+
+[deployment]
+build = ["npm", "run", "build"]
+deploymentTarget = "autoscale"
+run = ["npm", "start"]
+
+[[ports]]
+localPort = 3000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 8000
+externalPort = 8000
+
+[agent]
+expertMode = true
+integrations = ["github:1.0.0"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Noah Development Server"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "ChromaDB Service"
+
+[[workflows.workflow]]
+name = "Noah Development Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx next dev --port 5000 --hostname 0.0.0.0"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow]]
+name = "ChromaDB Service"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx chromadb run --host 0.0.0.0 --port 8000"
+waitForPort = 8000
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[objectStorage]
+defaultBucketID = "replit-objstore-32a254cd-ac94-492f-bdf5-f24008b95423"
